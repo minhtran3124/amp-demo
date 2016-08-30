@@ -1,0 +1,31 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    {{{head}}}
+    {{> head.html}}
+    <style amp-custom>
+      {{> css/code.css}}
+      {{> css/material.css}}
+      {{> css/styles.css}}
+      {{> css/preview.css}}
+      {{{exampleStyles}}}
+    </style>
+  </head>
+  <body>
+    <div id="close-preview">
+      <a href=".." id="exit">
+        View annotated Source 
+      </a>
+    </div>
+      {{#metadata.experiment}}
+        {{> experiment.html}}
+      {{/metadata.experiment}}
+    <article id="preview">
+      {{#sections}}
+      {{{preview}}}
+      {{/sections}}
+    </article>
+    {{> analytics.html}}
+    {{> serviceworker.html}}
+  </body>
+</html>
