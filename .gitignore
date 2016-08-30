@@ -1,0 +1,42 @@
+.DS_STORE
+bower_components
+vendor
+build
+dist
+bin
+# Log files
+*.log
+
+menudata
+
+# Node
+node_modules
+
+aws.config.json
+
+# IntelliJ
+.idea
+*.iml
+
+.sass-cache
+
+.DS_Store
+
+*.pem
+.sass_cache
+
+services/server-greenchef/.DS_Store
+
+services/server-greenchef/stripe.config.json
+
+scripts/**/out
+
+*.swp
+.awspublish-*
+
+services/.DS_Store
+
+services/.DS_Store
+
+.test
+.vscode
