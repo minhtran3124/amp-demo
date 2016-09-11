@@ -1,0 +1,14 @@
+machine:
+  timezone:
+    America/Los_Angeles
+  node:
+    version: 6.4.0
+
+dependencies:
+  pre:
+    - npm install -g gulp npm
+  override:
+    - npm install; bower install'
+  cache_directories:
+    - 'node_modules'
+    - 'bower_componets'

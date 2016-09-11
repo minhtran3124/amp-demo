@@ -1,0 +1,20 @@
+<div class="modal-header">
+  <h4 class="modal-title text-uppercase">Add new todo</h4>
+</div>
+
+<form name="todoForm" ng-submit="createTodo()">
+  <div class="modal-body">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon">Todo</span>
+      <input type="text" class="form-control" placeholder="Todo content" aria-describedby="basic-addon" name="name" ng-model="content"/>
+    </div>
+    <select class="dropdown-box" ng-model="projectId">
+      <option value="{{project._id}}" ng-repeat="project in projects">{{project.name}}</option>
+    </select>
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn btn-sm btn-success" type="submit">Add</button>
+    <button class="btn btn-sm btn-default" ng-click="cancel()">Cancel</button>
+  </div>
+</form>
