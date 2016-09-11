@@ -9,6 +9,9 @@ bin
 
 menudata
 
+# Vagrant
+vagrant/.vagrant/
+
 # Node
 node_modules
 
@@ -40,3 +43,5 @@ services/.DS_Store
 
 .test
 .vscode
+index-amp.html
+source/
