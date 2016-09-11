@@ -8,8 +8,6 @@
 
 # Variables
 # ---------
-NODE_VERSION="v0.10.38"
-
 echo '### Updating system ...'
 sudo apt-get update -y
 sudo apt-get -y install git-core python g++ make checkinstall zlib1g-dev zip curl
@@ -23,9 +21,20 @@ source ~/.nvm/nvm.sh
 echo "source ~/.nvm/nvm.sh" >> ~/.bashrc
 echo "nvm use $NODE_VERSION" >> ~/.bashrc
 
-nvm install $NODE_VERSION && nvm alias default $NODE_VERSION
+nvm list
+nvm ls-remote
+nvm install 6.4.0
+nvm use 6.4.0
+nvm alias default 6.4.0
+npm install -g npm
 
-# Install gulp
+echo "Installing Gulp and Bower"
+npm install bower gulp -g
+
+# Install mongodb
 # ---------------
-echo "Installing Gulp"
-npm install gulp -g
+echo '### Install MongoDB'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | sudo tee -a /etc/apt/sources.list.d/10gen.list
+sudo apt-get -y update
+sudo apt-get -y install mongodb-org
