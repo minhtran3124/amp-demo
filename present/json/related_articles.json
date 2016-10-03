@@ -1,0 +1,19 @@
+{
+ "items": [
+   {
+     "title": "Shopping",
+     "thumbnail": "/images/articles/shopping_thumb.jpg",
+     "url": "/"
+   },
+   {
+     "title": "The tastiest recipes",
+     "thumbnail": "/images/articles/recipe_thumb.jpg",
+     "url": "/"
+   },
+   {
+     "title": "News Articles",
+     "thumbnail": "/images/articles/video_thumb.jpg",
+     "url": "/"
+   }
+ ]
+}
