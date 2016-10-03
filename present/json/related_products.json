@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "img": "/images/products/best-list/product_sm1.jpg",
+      "name": "Apple",
+      "price": "1.99",
+      "stars": "&#9733;&#9733;&#9733;&#9733;&#9733;",
+      "attribution": "visualhunt",
+      "url": "#"
+    },
+    {
+      "id": 2,
+      "img": "/images/products/best-list/product_sm2.jpg",
+      "name": "Orange",
+      "attribution": "visualhunt",
+      "price": "0.99",
+      "stars": "&#9733;&#9733;&#9733;&#9733;&#9734;",
+      "url": "#"
+    },
+    {
+      "id": 3,
+      "img": "/images/products/best-list/product_sm5.jpg",
+      "name": "Pear",
+      "attribution": "visualhunt",
+      "price": "1.50",
+      "stars": "&#9733;&#9733;&#9733;&#9734;&#9734;",
+      "url": "#"
+    },
+    {
+      "id": 4,
+      "img": "/images/products/best-list/product_sm6.jpg",
+      "name": "Banana",
+      "attribution": "pixabay",
+      "price": "1.50",
+      "stars": "&#9733;&#9733;&#9733;&#9733;&#9733;",
+      "url": "#"
+    }
+  ]
+}
